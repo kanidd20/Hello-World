@@ -56,7 +56,6 @@ improvedRabbit.prototype.teeth = "yellow";
 
 const rabbit1 = new improvedRabbit("female");
 const rabbit2 = new improvedRabbit("male");
-rabbit1.prototype.hiar = "red";
 
 
 rabbit1.speak("say sometjing");
