@@ -50,12 +50,18 @@ class improvedRabbit{
 
 }
 
+//You can add members with the prototype function, now ever rabbit will have yello teeth
+improvedRabbit.prototype.teeth = "yellow";
+;
+
 const rabbit1 = new improvedRabbit("female");
 const rabbit2 = new improvedRabbit("male");
+rabbit1.prototype.hiar = "red";
+
 
 rabbit1.speak("say sometjing");
 babyrabbit = rabbit1.mate(rabbit2);
 
 console.log(babyrabbit.gender);
-
+console.log(babyrabbit.teeth);
 
