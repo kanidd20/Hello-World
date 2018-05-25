@@ -64,3 +64,18 @@ babyrabbit = rabbit1.mate(rabbit2);
 console.log(babyrabbit.gender);
 console.log(babyrabbit.teeth);
 
+
+let literalObj = {
+    name: "this is a name"
+}
+
+newArr = [1,2,3,4];
+
+str = newArr.toString();
+console.log(newArr);
+
+Array.prototype.toString = function (){
+   return "The string method has been changed";
+}
+
+

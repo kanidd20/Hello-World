@@ -1,0 +1,23 @@
+Prototype:
+    -Blueprint of data that objects are created from
+    -Similar to classes
+    -Every prototype inherits from the original prototypes
+        1. These includes Array.prototype , Object.prototype , Function.prototype
+        2. Each one of these has inherent methods, eg. toString, split, etc
+        3. You can overwride built in toString method by doing this ...
+            Code Snippet: 
+            newArr = [1,2,3];
+            str = newArr.toString();
+            console.log(newArr); // to string method will turn it into a string
+
+            Array.prototype.toString = function (){
+            return "The string method has been changed";
+            }
+
+            console.log(newArr.toString) // The to string method has been changed
+
+Objects:
+    - Objects can be created via literal or class blueprint
+    - When using literals, then you dont have to create an instance of it
+    - When using classes you have to use the new keyword and call on the constructor
+

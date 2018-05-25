@@ -22,4 +22,16 @@ let obj = {
         console.log("hello");
     }
 }
-   
+  
+//This is a test of creating objects in javascript
+let whatever = {
+    cat: function(someString){
+        console.log("The first function");
+    },
+    dog: function(){
+        console.log("The second function")
+    }
+
+}
+
+let test = new whatever();
