@@ -6,6 +6,7 @@ function protorabbit(someType){
     this.type = someType;
 }
 
+//Essentially functions are classes and used as a blueprint for the object
 const newrabbit = new protorabbit("killer");
 //console.log(newrabbit.type)
 
@@ -78,4 +79,27 @@ Array.prototype.toString = function (){
    return "The string method has been changed";
 }
 
+function whatever(){
+    console.log("whatever");
+    return 5;
 
+}
+
+
+console.log(whatever()); // If you dont use parenthesis then it returns the function but if you do it returns the return result
+
+
+//This is a testing of closures 
+let t = 5;
+
+function add(){
+    
+    function inner(){
+        console.log(5);
+    }
+    
+    return t*2;
+}
+t = 10;
+
+const newobj = new add("whatever");
