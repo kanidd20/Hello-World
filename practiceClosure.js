@@ -28,8 +28,16 @@ function closureFunction() {
     newobj.speak();
     console.log(newobj.name);
 }
+var recurs = require('./robot-pathing');
 
 closureFunction(); 
 
 newnewobj = Object.create(newobj); //This inherits from an existing object
 console.log(newnewobj.name);
+
+const dummy = function(name){
+    this.name = name
+    return name;
+}
+
+console.log(recurs(4));
